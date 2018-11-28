@@ -9,6 +9,7 @@
     public HearUser selectByToken(String token) {
 
 使用配置说明：
+
 1.加入maven依赖
         <dependency>
             <groupId>com.kaochong.cache</groupId>
