@@ -5,6 +5,9 @@
 
 代码示例：
 
+    @KCCacheable(cacheType = CacheType.REDIS, cacheNames = "listen:THearUser", key = "#openId", unless = "#result != null", redisUpExpire = true)
+    public THearUser selectByOpenId(String openId) {
+    
     @KCCacheEvict(cacheType = CacheType.REDIS, cacheNames = "listen:THearUser", key = "#tHearUser.openId")
     public void updateByPrimaryKeySelective(THearUser tHearUser) {
 
