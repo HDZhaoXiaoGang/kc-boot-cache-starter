@@ -1,5 +1,8 @@
 # kc-boot-cache-starter
+项目编写起因：spring cache 注解不提供缓存失效错略，项目中不同数据缓存有效期时间不同，因此为提供快死开发编写次工具辅助
+
 主要实现redis 失效策略自定义 ehcache失效策略自定义.
+
 代码示例：
 
     @KCCacheEvict(cacheType = CacheType.REDIS, cacheNames = "listen:THearUser", key = "#tHearUser.openId")
