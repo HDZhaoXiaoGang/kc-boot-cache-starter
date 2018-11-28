@@ -1,6 +1,7 @@
 # kc-boot-cache-starter
 主要实现redis 失效策略自定义 ehcache失效策略自定义.
 代码示例：
+
     @KCCacheEvict(cacheType = CacheType.REDIS, cacheNames = "listen:THearUser", key = "#tHearUser.openId")
     public void updateByPrimaryKeySelective(THearUser tHearUser) {
 
