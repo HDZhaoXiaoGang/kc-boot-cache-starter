@@ -15,6 +15,8 @@
             <artifactId>kc-boot-cache-starter</artifactId>
             <version>0.0.3-SNAPSHOT</version>
         </dependency>
+        
+        
 2.开启切面
         加入注解 @EnableAspectJAutoProxy
 到这里就可以愉快到使用注解方式使用缓存了
